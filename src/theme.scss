@@ -1,0 +1,19 @@
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/@angular/material/theming';
+// @import './app/ru.app.theme.scss';
+// @import './app/routing/ru.routing.theme.scss';
+// @import './app/admin/ru.admin.theme.scss';
+// @import './app/notice/ru.notice.theme.scss';
+
+@include mat-core();
+
+$ru-theme-primary: mat-palette($mat-light-blue);
+$ru-theme-accent: mat-palette($mat-orange, A200, A100, A400);
+$ru-theme-warn: mat-palette($mat-red);
+$ru-theme: mat-light-theme($ru-theme-primary, $ru-theme-accent, $ru-theme-warn);
+
+@include angular-material-theme($ru-theme);
+// @include ru-app-theme($ru-theme);
+// @include ru-routing-theme($ru-theme);
+// @include ru-admin-theme($ru-theme);
+// @include ru-notice-theme($ru-theme);
